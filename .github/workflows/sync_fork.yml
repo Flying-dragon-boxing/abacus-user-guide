@@ -11,6 +11,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+
+      - name: Set Git Identity
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
         
       - name: Sync with Upstream  
         run: |
@@ -19,11 +24,6 @@ jobs:
           git checkout sync_with_upstream
           git merge upstream/master --allow-unrelated-histories --strategy-option=theirs
           git checkout --ours .github/workflows
-
-      - name: Set Git Identity
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
           
       - name: Replace gitee.io Links
         uses: thiagodnf/string-replacer@v1.0.2
