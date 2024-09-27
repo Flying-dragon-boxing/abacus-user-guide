@@ -47,7 +47,7 @@ jobs:
 
       - name: Commit Changes
         run: |
-          git commit -m "Modify files after sync" || echo "No changes to commit"
+          git commit -a -m "Modify files after sync" || echo "No changes to commit"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
