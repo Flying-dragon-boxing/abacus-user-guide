@@ -9,12 +9,15 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Fork Sync
-        uses: TG908/fork-sync@v1.6.3
-        with:
-          owner: MCresearch
-          head: master
-          base: sync_with_upstream
+      - name: Checkout
+        uses: actions/checkout@master
+        
+      - name: Sync with Upstream  
+        run: |
+          git remote add upstream https://github.com/MCresearch/abacus-user-guide.git
+          git fetch upstream
+          git checkout -B sync_with_upstream upstream/master
+          git checkout -m sync_with_upstream -- . ':!.github/workflows/*'
           
       - name: Replace gitee.io Links
         uses: thiagodnf/string-replacer@v1.0.2
@@ -31,3 +34,8 @@ jobs:
             **/*.md
           find: 'mcresearch.github.io/abacus-user-guide'
           replace: 'abacus-user-guide.pages.dev'
+
+      - name: Commit Changes
+        run: |
+          git commit -m "Modify files after sync" || echo "No changes to commit"
+          git push origin sync_with_upstream
