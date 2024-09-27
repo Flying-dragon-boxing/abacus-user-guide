@@ -19,6 +19,11 @@ jobs:
           git checkout sync_with_upstream
           git merge upstream/master --allow-unrelated-histories --strategy-option=theirs
           git checkout --ours .github/workflows
+
+      - name: Set Git Identity
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           
       - name: Replace gitee.io Links
         uses: thiagodnf/string-replacer@v1.0.2
@@ -39,4 +44,9 @@ jobs:
       - name: Commit Changes
         run: |
           git commit -m "Modify files after sync" || echo "No changes to commit"
-          git push origin sync_with_upstream
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'sync_with_upstream'
