@@ -17,19 +17,17 @@ jobs:
           base: sync_with_upstream
           
       - name: Replace gitee.io Links
-        uses: richardrigutins/replace-in-files@v2
+        uses: thiagodnf/string-replacer@v1.0.2
         with:
-          files: '**/*.md'
-          search-text: 'mcresearch.gitee.io'
-          replacement-text: 'abacus-user-guide.pages.dev'
-          encoding: 'utf8'
-          max-parallelism: 10
+          include: |
+            **/*.md
+          find: 'mcresearch.gitee.io/abacus-user-guide'
+          replace: 'abacus-user-guide.pages.dev'
 
       - name: Replace github.io Links
-        uses: richardrigutins/replace-in-files@v2
+        uses: thiagodnf/string-replacer@v1.0.2
         with:
-          files: '**/*.md'
-          search-text: 'mcresearch.github.io'
-          replacement-text: 'abacus-user-guide.pages.dev'
-          encoding: 'utf8'
-          max-parallelism: 10
+          include: |
+            **/*.md
+          find: 'mcresearch.github.io/abacus-user-guide'
+          replace: 'abacus-user-guide.pages.dev'
