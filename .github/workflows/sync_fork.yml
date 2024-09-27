@@ -1,0 +1,35 @@
+# .github/workflows/sync.yml
+name: Sync Fork
+
+on:
+  push: # push 时触发, 主要是为了测试配置有没有问题
+  schedule:
+    - cron: '0 0 * * *' # 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fork Sync
+      - uses: TG908/fork-sync@v1.6.3
+        with:
+          owner: MCresearch
+          head: master
+          base: sync_with_upstream
+          
+      - name: Replace gitee.io Links
+      - uses: richardrigutins/replace-in-files@v2
+        with:
+          files: '**/*.md'
+          search-text: 'mcresearch.gitee.io/abacus-user-guide'
+          replacement-text: 'abacus-user-guide.pages.dev'
+          encoding: 'utf8'
+          max-parallelism: 10
+
+      - name: Replace github.io Links
+      - uses: richardrigutins/replace-in-files@v2
+        with:
+          files: '**/*.md'
+          search-text: 'mcresearch.github.io/abacus-user-guide'
+          replacement-text: 'abacus-user-guide.pages.dev'
+          encoding: 'utf8'
+          max-parallelism: 10
