@@ -17,7 +17,7 @@ jobs:
           git remote add upstream https://github.com/MCresearch/abacus-user-guide.git
           git fetch upstream
           git checkout sync_with_upstream
-          git merge upstream/master --strategy-option=theirs
+          git merge upstream/master --allow-unrelated-histories --strategy-option=theirs
           git checkout --ours .github/workflows
           
       - name: Replace gitee.io Links
