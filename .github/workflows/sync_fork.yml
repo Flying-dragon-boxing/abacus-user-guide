@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fork Sync
-      - uses: TG908/fork-sync@v1.6.3
+        uses: TG908/fork-sync@v1.6.3
         with:
           owner: MCresearch
           head: master
           base: sync_with_upstream
           
       - name: Replace gitee.io Links
-      - uses: richardrigutins/replace-in-files@v2
+        uses: richardrigutins/replace-in-files@v2
         with:
           files: '**/*.md'
           search-text: 'mcresearch.gitee.io/abacus-user-guide'
@@ -26,7 +26,7 @@ jobs:
           max-parallelism: 10
 
       - name: Replace github.io Links
-      - uses: richardrigutins/replace-in-files@v2
+        uses: richardrigutins/replace-in-files@v2
         with:
           files: '**/*.md'
           search-text: 'mcresearch.github.io/abacus-user-guide'
