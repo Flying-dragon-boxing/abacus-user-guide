@@ -19,8 +19,8 @@ jobs:
       - name: Replace gitee.io Links
         uses: richardrigutins/replace-in-files@v2
         with:
-          files: '*.md'
-          search-text: 'mcresearch.gitee.io/abacus-user-guide'
+          files: '**/*.md'
+          search-text: 'mcresearch.gitee.io'
           replacement-text: 'abacus-user-guide.pages.dev'
           encoding: 'utf8'
           max-parallelism: 10
@@ -28,8 +28,8 @@ jobs:
       - name: Replace github.io Links
         uses: richardrigutins/replace-in-files@v2
         with:
-          files: '*.md'
-          search-text: 'mcresearch.github.io/abacus-user-guide'
+          files: '**/*.md'
+          search-text: 'mcresearch.github.io'
           replacement-text: 'abacus-user-guide.pages.dev'
           encoding: 'utf8'
           max-parallelism: 10
