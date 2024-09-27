@@ -30,16 +30,20 @@ jobs:
         with:
           include: |
             **/*.md
-          find: 'mcresearch.gitee.io/abacus-user-guide'
-          replace: 'abacus-user-guide.pages.dev'
+          exclude: |
+            node_modules/**
+          find: "mcresearch.gitee.io/abacus-user-guide"
+          replace: "abacus-user-guide.pages.dev"
 
       - name: Replace github.io Links
         uses: thiagodnf/string-replacer@v1.0.2
         with:
           include: |
             **/*.md
-          find: 'mcresearch.github.io/abacus-user-guide'
-          replace: 'abacus-user-guide.pages.dev'
+          exclude: |
+            node_modules/**
+          find: "mcresearch.github.io/abacus-user-guide"
+          replace: "abacus-user-guide.pages.dev"
 
       - name: Commit Changes
         run: |
