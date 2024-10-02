@@ -232,4 +232,4 @@ void ModuleIO::CifParser::read(const std::string& fcif,
 
 # 扩展阅读
 
-C++ 程序设计的一些想法：[https://mcresearch.github.io/abacus-user-guide/develop-design.html](https://mcresearch.github.io/abacus-user-guide/develop-design.html)
+C++ 程序设计的一些想法：[https://abacus-user-guide.pages.dev/develop-design.html](https://abacus-user-guide.pages.dev/develop-design.html)
