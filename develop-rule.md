@@ -33,7 +33,7 @@ source
 ├── module_ri              #Resolution of identity相关的Beyond DFT的模块
 ```
 
-其中，<strong>14 个主模块</strong>的核心功能如上面注释所言，代码存放建议按照模块化管理，相关功能的代码存放到对应的模块当中。如果需要涉及到新建模块以及更新模块位置等需求，应该按照 [ABACUS 的 Github 仓库 Issues 处理流程 · GitBook](https://abacus-user-guide.pages.dev/develop-issue.html) 中相关规范要求去 Github 仓库提交 ISSUE 并邀请开发者讨论来进行。
+其中，<strong>14 个主模块</strong>的核心功能如上面注释所言，代码存放建议按照模块化管理，相关功能的代码存放到对应的模块当中。如果需要涉及到新建模块以及更新模块位置等需求，应该按照 [ABACUS 的 Github 仓库 Issues 处理流程 · GitBook](https://mcresearch.github.io/abacus-user-guide/develop-issue.html) 中相关规范要求去 Github 仓库提交 ISSUE 并邀请开发者讨论来进行。
 
 ## 2.1 模块内部代码存放规范
 
@@ -60,7 +60,7 @@ CMakeLists.txt
 
 <strong>我们提出如下的模块代码存放规范：</strong>
 
-1. <strong>基础代码存放规范：</strong>模块中的基础代码（除去部分特殊代码外的大部分代码）应直接存放到当前模块目录下，头文件以 `.h` 命名；源文件以 `.cpp` 命名；代码规范应该遵循 [ABACUS 开源项目 C++ 代码规范 · GitBook](https://abacus-user-guide.pages.dev/develop-C++.html) 中的要求。
+1. <strong>基础代码存放规范：</strong>模块中的基础代码（除去部分特殊代码外的大部分代码）应直接存放到当前模块目录下，头文件以 `.h` 命名；源文件以 `.cpp` 命名；代码规范应该遵循 [ABACUS 开源项目 C++ 代码规范 · GitBook](https://mcresearch.github.io/abacus-user-guide/develop-C++.html) 中的要求。
 2. <strong>异构计算代码存放规范：</strong>模块中涉及到<strong>异构计算（CPU 结合GPU计算）部分的代码</strong>应直接存放于当前模块的 `kernels` 目录下；这部分代码的结构将会在稍后详细介绍。
 3. <strong>子模块代码存放规范：</strong>
 
