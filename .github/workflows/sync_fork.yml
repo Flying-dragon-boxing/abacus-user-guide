@@ -1,10 +1,10 @@
 # .github/workflows/sync.yml
 name: Sync Fork
 
-on:
-  push: # push 时触发, 主要是为了测试配置有没有问题
+on: # push 时触发, 主要是为了测试配置有没有问题
   schedule:
-    - cron: '0 0 * * *' # 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
+    - cron: '0 16 * * *' # 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
+  push:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
