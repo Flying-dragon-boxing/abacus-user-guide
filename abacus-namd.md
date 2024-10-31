@@ -28,7 +28,7 @@
 
 ### 1.1 输入文件 INPUT
 
-大部分参数为做分子动力学计算所需要参数，具体含义可以参考 [ABACUS 的分子动力学教程](https://mcresearch.gitee.io/abacus-user-guide/abacus-md.html)。为了后续用 Hefei NAMD 进行<strong>非绝热分子动力学</strong>计算，ABACUS 会输出每一步分子动力学模拟的哈密顿量矩阵 H、交叠矩阵 S、波函数文件。因此需将相关的 ABACUS 的 `INPUT` 文件中的输入参数 `out_wfc_lcao` 和 `out_mat_hs` 都设置为 1，表示输出这些物理量。计算完成后，在 `OUT.***` 文件夹中，每一个分子步都对应一个文件夹 `MD_n`，在每个文件夹中会有 `data-0-H`、`data-0-S`、`LOWF_GAMMA_S1.dat` 三个文件储存我们需要输出的物理量。
+大部分参数为做分子动力学计算所需要参数，具体含义可以参考 [ABACUS 的分子动力学教程](https://abacus-user-guide.pages.dev/abacus-md.html)。为了后续用 Hefei NAMD 进行<strong>非绝热分子动力学</strong>计算，ABACUS 会输出每一步分子动力学模拟的哈密顿量矩阵 H、交叠矩阵 S、波函数文件。因此需将相关的 ABACUS 的 `INPUT` 文件中的输入参数 `out_wfc_lcao` 和 `out_mat_hs` 都设置为 1，表示输出这些物理量。计算完成后，在 `OUT.***` 文件夹中，每一个分子步都对应一个文件夹 `MD_n`，在每个文件夹中会有 `data-0-H`、`data-0-S`、`LOWF_GAMMA_S1.dat` 三个文件储存我们需要输出的物理量。
 
 ```bash
 INPUT_PARAMETERS

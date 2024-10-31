@@ -105,7 +105,7 @@ efield_pos_dec        0.10
 
 - `efield_amp`：类型是 Real，电场强度，默认值为 0，单位为 a.u.，其中 1 a.u. = 51.4220632*10^10 V/m
 
-以上参数的使用方法在[采用 ABACUS 进行表面计算（二）：偶极修正](https://mcresearch.gitee.io/abacus-user-guide/abacus-surface2.html)中有更详细的说明。
+以上参数的使用方法在[采用 ABACUS 进行表面计算（二）：偶极修正](https://abacus-user-guide.pages.dev/abacus-surface2.html)中有更详细的说明。
 
 # 四、预期计算结果
 

@@ -7,11 +7,11 @@
 <strong>飞书链接：[Introduction to ABACUS: Path to PW calculation - Part 1](https://xmywuqhxb0.feishu.cn/docx/XBX6dMphfozMCWx7u8ucUEFOnze)</strong>
 
 > 💡<strong>写在前面</strong>
-> 作为 SIAB（Systematically Improvable Atomic orbital Basis, [link](https://mcresearch.gitee.io/abacus-user-guide/abacus-nac2.html)）数值原子轨道生成程序的数据上游，本系列文档将首先从平面波基组/SCF（Self-Consistent Field，即自洽场迭代）讲起，将《从 SIAB 到 ABACUS》的讲述延续下去，之后再探索 SIAB 的下游，即涉及 NAOs 的 LCAO method（basis_type = 'lcao'）。
+> 作为 SIAB（Systematically Improvable Atomic orbital Basis, [link](https://abacus-user-guide.pages.dev/abacus-nac2.html)）数值原子轨道生成程序的数据上游，本系列文档将首先从平面波基组/SCF（Self-Consistent Field，即自洽场迭代）讲起，将《从 SIAB 到 ABACUS》的讲述延续下去，之后再探索 SIAB 的下游，即涉及 NAOs 的 LCAO method（basis_type = 'lcao'）。
 > 本系列文档的预期受众：新晋 ABACUS 开发者
 
 > 🎨<strong>写在前面</strong>
-> 实际上，在 2023 Q1（第一季度），ABACUS 发布了面向团队内部的[代码编程规范](https://mcresearch.gitee.io/abacus-user-guide/develop-C++.html)，因此在代码阅读过程中可能遇到各种还没有被更正的变量命名，请格外注意。代码的缩进与其他格式则由 2023.5 发布的新 Pull request 标准，采用<strong>clang-format-16</strong>标准执行。
+> 实际上，在 2023 Q1（第一季度），ABACUS 发布了面向团队内部的[代码编程规范](https://abacus-user-guide.pages.dev/develop-C++.html)，因此在代码阅读过程中可能遇到各种还没有被更正的变量命名，请格外注意。代码的缩进与其他格式则由 2023.5 发布的新 Pull request 标准，采用<strong>clang-format-16</strong>标准执行。
 
 > 📃<strong>写在前面</strong>
 > 本系列文档内容的组织原则为：
