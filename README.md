@@ -167,7 +167,13 @@ ABACUS 网站访问：
 5. [以格点积分程序为例：一些代码开发习惯小贴士](develop-grid.md)
 6. [在 ABACUS 中进行差分测试](algorithm-delta.md)
 
-## 4.4 平面波代码介绍
+## 4.4 模块介绍
+
+1. [ESolver 模块介绍](develop-ESolver.md)
+2. [HSolver 模块介绍](develop-HSolver.md)
+3. [HContainer 模块介绍](develop-HContainer.md)
+
+## 4.5 平面波代码介绍
 
 1. [Introduction to ABACUS: Path to PW calculation - Part 1](develop-path1.md)
 2. [Introduction to ABACUS: Path to PW calculation - Part 2](develop-path2.md)
@@ -182,6 +188,12 @@ ABACUS 网站访问：
 11. [Introduction to ABACUS: Path to PW calculation - Part 10](develop-path10.md)
 12. [Introduction to ABACUS: Path to PW calculation - Part 11](develop-path11.md)
 13. [Introduction to ABACUS: Path to PW calculation - Summary Final](develop-sm2.md)
+
+## 4.6 Pyabacus 介绍
+
+1. [Pyabacus 文档一：用户手册](develop-pyabacus1.md)
+2. [Pyabacus 文档二：HSolver 模块](develop-pyabacus2.md)
+3. [Pyabacus 文档三：开发者指南](develop-pyabacus3.md)
 
 # 五、算法文档
 
