@@ -45,7 +45,7 @@ ABACUS 使用 LCAO 基组进行自洽迭代场计算（Self-Consistent Field，S
 
 1. `<orbital>` 中 `index="1"` 表示第"1"条轨道，`atom_index="1"` 表示第"1"个原子，`species="Li"` 表示元素为"Li"
 2. l="0"，m="0"，z="1"分别代表角量子数为"0"，磁量子数为"0"，每个角量子数上对应的径向轨道为"1"
-   例如 Li 在标准原子轨道库里是 DZP，具体轨道为 4s1p，如下表所示共 7 个：4 个 s 轨道（分别对应 z 取 1 到 4；l 取 0；m 取 0 到 2l，即 0），3 个 p 轨道（对应 z 取 1；l 取 1；m 取 0 到 2l，即 0，1，2），更具体的介绍可以参考[数值原子轨道基组的个数](https://abacus-user-guide.pages.dev/abacus-nac1.html#3-%E6%95%B0%E5%80%BC%E5%8E%9F%E5%AD%90%E8%BD%A8%E9%81%93%E5%9F%BA%E7%BB%84%E7%9A%84%E4%B8%AA%E6%95%B0)
+   例如 Li 在标准原子轨道库里是 DZP，具体轨道为 4s1p，如下表所示共 7 个：4 个 s 轨道（分别对应 z 取 1 到 4；l 取 0；m 取 0 到 2l，即 0），3 个 p 轨道（对应 z 取 1；l 取 1；m 取 0 到 2l，即 0，1，2），更具体的介绍可以参考[数值原子轨道基组的个数](https://mcresearch.github.io/abacus-user-guide/abacus-nac1.html#3-%E6%95%B0%E5%80%BC%E5%8E%9F%E5%AD%90%E8%BD%A8%E9%81%93%E5%9F%BA%E7%BB%84%E7%9A%84%E4%B8%AA%E6%95%B0)
 3. `<data>`到`</data>`中的内容代表该轨道的 dos，两列分别对应 spin 为上和下的 dos
 
 | Li | s |   |   |   | p |   |   |

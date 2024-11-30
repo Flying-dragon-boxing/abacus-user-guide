@@ -40,7 +40,7 @@ git clone https://gitee.com/mcresearch/abacus-user-guide
 
 # 三、偶极修正与补偿电荷结合的表面计算
 
-在[采用 ABACUS 进行表面计算（二）：偶极修正](https://abacus-user-guide.pages.dev/abacus-surface2.html)文档中，我们给出了水分子层计算中应用偶极修正之后的结果。在此基础上，我们可以进一步应用补偿电荷功能。如图 1 所示，我们采用了完全相同的一个水分子在周期性晶胞的结构，只有 `INPUT` 文件中添加了补偿电荷相关参数。
+在[采用 ABACUS 进行表面计算（二）：偶极修正](https://mcresearch.gitee.io/abacus-user-guide/abacus-surface2.html)文档中，我们给出了水分子层计算中应用偶极修正之后的结果。在此基础上，我们可以进一步应用补偿电荷功能。如图 1 所示，我们采用了完全相同的一个水分子在周期性晶胞的结构，只有 `INPUT` 文件中添加了补偿电荷相关参数。
 
 ```shell
 INPUT_PARAMETERS
@@ -96,7 +96,7 @@ out_pot             2
 
 # 四、预期结果
 
-如左下图所示，一个水分子位于超胞（尺寸为 $$3\times3\times18 \mathrm{Å^3}$$）的中部（即位于$$9 \mathrm{Å}$$）。按照[采用 ABACUS 进行表面计算（二）：偶极修正](https://abacus-user-guide.pages.dev/abacus-surface2.html)文档中偶极修正参数设置的说明，锯齿即位于 0.0~0.1 的区域。<strong>注意在采用偶极修正/外加电场功能的情况下，带电平板的位置应该在真空区域，并且不同于偶极修正锯齿所在的区域</strong>。
+如左下图所示，一个水分子位于超胞（尺寸为 $$3\times3\times18 \mathrm{Å^3}$$）的中部（即位于$$9 \mathrm{Å}$$）。按照[采用 ABACUS 进行表面计算（二）：偶极修正](https://mcresearch.gitee.io/abacus-user-guide/abacus-surface2.html)文档中偶极修正参数设置的说明，锯齿即位于 0.0~0.1 的区域。<strong>注意在采用偶极修正/外加电场功能的情况下，带电平板的位置应该在真空区域，并且不同于偶极修正锯齿所在的区域</strong>。
 
 为了验证结果的正确性，我们可以画出静电势沿 `Z` 轴（`c` 方向）的变化如图 2 所示。与只应用偶极修正功能的静电势相比（可参考表面计算二里面的图 3），在分数坐标 0.7（Z 轴 12.6 埃）处，静电势出现了一个向下的凹陷，这来自于此处的补偿电荷带电平板的影响。
 
