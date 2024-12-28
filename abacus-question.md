@@ -39,13 +39,13 @@
 
 答：可以参考官方文档 [https://abacus.deepmodeling.com/en/latest/quick_start/easy_install.html](https://abacus.deepmodeling.com/en/latest/quick_start/easy_install.html)
 
-也可以登录网址 [https://abacus-user-guide.pages.dev/](https://abacus-user-guide.pages.dev/)，上面有一些针对不同编译器的中文编译教程。
+也可以登录网址 [https://mcresearch.github.io/abacus-user-guide/](https://mcresearch.github.io/abacus-user-guide/)，上面有一些针对不同编译器的中文编译教程。
 
 另外，注意“安装 ABACUS”这句话其实有歧义，ABACUS 有很多不同的安装选项，比如是否只安装支持平面波的功能，还是也要安装支持数值原子轨道的功能，是否要使用 LIBXC 等等不同选项，可根据自己的需要来安装具体的代码模块。
 
 ### <strong>1.3 如何在曙光的 DCU 上编译 ABACUS？</strong>
 
-答：可参考文档 [https://abacus-user-guide.pages.dev/abacus-dcu.html](https://abacus-user-guide.pages.dev/abacus-dcu.html)
+答：可参考文档 [https://mcresearch.github.io/abacus-user-guide/abacus-dcu.html](https://mcresearch.github.io/abacus-user-guide/abacus-dcu.html)
 
 ## 2. 计算前准备
 
@@ -63,11 +63,11 @@
 
 关于数值原子轨道的背景知识，可以参考文档：
 
-[https://abacus-user-guide.pages.dev/abacus-nac1.html](https://abacus-user-guide.pages.dev/abacus-nac1.html)
+[https://mcresearch.github.io/abacus-user-guide/abacus-nac1.html](https://mcresearch.github.io/abacus-user-guide/abacus-nac1.html)
 
-[https://abacus-user-guide.pages.dev/abacus-nac2.html](https://abacus-user-guide.pages.dev/abacus-nac2.html)
+[https://mcresearch.github.io/abacus-user-guide/abacus-nac2.html](https://mcresearch.github.io/abacus-user-guide/abacus-nac2.html)
 
-[https://abacus-user-guide.pages.dev/abacus-nac3.html](https://abacus-user-guide.pages.dev/abacus-nac3.html)
+[https://mcresearch.github.io/abacus-user-guide/abacus-nac3.html](https://mcresearch.github.io/abacus-user-guide/abacus-nac3.html)
 
 ### 2.4 能量截断值收敛性测试是必须要做的吗？
 

@@ -16,7 +16,7 @@
 
 首先，再次简单介绍一下 ABACUS。ABACUS（原子算筹）软件同时支持两种基矢量，一种是<strong>平面波（Plane wave，PW） </strong>基组，一种是 <strong>LCAO (Linear combination of atomic orbitals) </strong>或者称 NAO (Numerical atomic orbitals) 基组。
 
-用户可以编译 <strong>仅支持 PW 基组的 ABACUS</strong> 或者 <strong>同时支持两种基组的 ABACUS</strong>。同时，针对 PW 基组的 ABACUS，用户还可以选择编译串行版本或并行版本。但因为这个文档的主题是如何在超算环境中编译 ABACUS（应该没有人在超算上跑串行的 ABACUS 吧），我们接下来只会介绍并行版本的编译方法。如果想要在普通的服务器上安装串行版本的 PW 基组的 ABACUS<strong>，</strong>可以参考 [GCC 编译 ABACUS 教程 · GitBook](https://abacus-user-guide.pages.dev/abacus-gcc.html) 和 [Intel oneAPI 编译 ABACUS 教程 · GitBook](https://abacus-user-guide.pages.dev/abacus-intel.html)。
+用户可以编译 <strong>仅支持 PW 基组的 ABACUS</strong> 或者 <strong>同时支持两种基组的 ABACUS</strong>。同时，针对 PW 基组的 ABACUS，用户还可以选择编译串行版本或并行版本。但因为这个文档的主题是如何在超算环境中编译 ABACUS（应该没有人在超算上跑串行的 ABACUS 吧），我们接下来只会介绍并行版本的编译方法。如果想要在普通的服务器上安装串行版本的 PW 基组的 ABACUS<strong>，</strong>可以参考 [GCC 编译 ABACUS 教程 · GitBook](https://mcresearch.gitee.io/abacus-user-guide/abacus-gcc.html) 和 [Intel oneAPI 编译 ABACUS 教程 · GitBook](https://mcresearch.gitee.io/abacus-user-guide/abacus-intel.html)。
 
 # 二、超算平台的简单介绍：
 
