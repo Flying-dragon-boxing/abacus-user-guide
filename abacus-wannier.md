@@ -12,7 +12,7 @@ Wannier 函数是周期性晶格势场中局域表象下的波函数，Wannier �
 
 在 ABACUS 等密度泛函理论（Density Functional Theory，简称 DFT）软件中，单电子近似下的布洛赫波函数可以通过自洽迭代求解 Kohn-Sham 方程得到。但是布洛赫波函数存在规范不确定性，进而导致 Wannier 函数[1-4]也不是唯一的。1997 年到 2001 年间，Nicola Marzari、David Vanderbilt 和 Ivo Souza 等人发展了最大局域化的 Wannier 函数（Maximally localized Wannier function, 简称 MLWF）的方法[1,2,4]，提出可以通过优化 Wannier 表象下的电子位置的方差（即 spread 函数）来确定一个规范，在该规范下 Wannier 函数是最局域的；该方法可以在 DFT 电子结构计算完之后以后处理的方式实现计算 MLWF。2008 年，用于产生 MLWF 的 Wannier90 软件发布，并在随后几年获得了广泛的应用。
 
-本教程分为两部分，第一部分 [最大局域化 Wannier 函数方法简介](https://mcresearch.gitee.io/abacus-user-guide/algorithm-wannier.html) 介绍最大局域化 Wannier 函数的算法，主要介绍 1997 年和 2001 年的两篇 PRB 文章中提出的优化算法，侧重物理与算法原理；第二部分即本文档，是 Wannier90 软件的 ABACUS 接口说明，主要介绍如何使用 ABACUS 计算 Wannier90 需要的输入文件，侧重具体软件使用。
+本教程分为两部分，第一部分 [最大局域化 Wannier 函数方法简介](https://abacus-user-guide.pages.dev/algorithm-wannier.html) 介绍最大局域化 Wannier 函数的算法，主要介绍 1997 年和 2001 年的两篇 PRB 文章中提出的优化算法，侧重物理与算法原理；第二部分即本文档，是 Wannier90 软件的 ABACUS 接口说明，主要介绍如何使用 ABACUS 计算 Wannier90 需要的输入文件，侧重具体软件使用。
 
 # 一、Wannier90 软件介绍
 
