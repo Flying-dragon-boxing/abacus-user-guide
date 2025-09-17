@@ -424,7 +424,7 @@ Abacus 文档
 
 [一键配置编译 ABACUS | toolchain 脚本的使用](https://bohrium.dp.tech/notebooks/5215742477)
 
-[Intel oneAPI 编译 ABACUS 教程 · GitBook](https://abacus-user-guide.pages.dev/abacus-intel.html)
+[Intel oneAPI 编译 ABACUS 教程 · GitBook](https://mcresearch.github.io/abacus-user-guide/abacus-intel.html)
 
 elpa
 
