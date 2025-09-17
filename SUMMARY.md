@@ -14,6 +14,9 @@
         * [在超算环境编译 ABACUS 的建议](abacus-hpc.md)
         * [ABACUS 在曙光 DCU 集群上的编译与使用](abacus-dcu.md)
     * 建模
+        * [ABACUS 如何选择晶胞朝向获得最佳并行效率？以碳纳米管为例](abacus-eff1.md)
+        * [ABACUS 如何选择晶胞朝向获得最佳并行效率？以二维氮化硼为例](abacus-eff2.md)
+	    * [ABACUS 如何选择晶胞朝向获得最佳并行效率？以铜表面一氧化碳吸附为例](abacus-eff3.md)
         * [模守恒赝势生成方法简介](abacus-upf.md)
         * [数值原子轨道（一）：ABACUS 中的数值原子轨道命名和使用方法](abacus-nac1.md)
         * [数值原子轨道（二）：生成给定模守恒赝势的数值原子轨道](abacus-nac2.md)
@@ -28,6 +31,7 @@
         * [ABACUS+DeePMD-kit 做机器学习分子动力学模拟](abacus-dpmd.md)
     * AI辅助功能
         * [ABACUS+DPGEN 使用教程](abacus-dpgen.md)
+        * [DeePKS-ES 介绍及使用教程](abacus-deepks-es.md)
     * 特色功能
         * [ABACUS 随机波函数 DFT 方法使用教程](abacus-sdft.md)
         * [ABACUS 随机波函数 DFT 计算电子电导热导教程](abacus-sdft_cond.md)
@@ -61,8 +65,9 @@
         * [ABACUS 注释规范：Doxygen 入门 (c++)](develop-dox.md)
         * [ABACUS 线上文档输入参数撰写规范](develop-input.md)
         * [ABACUS 代码存放规范](develop-rule.md)
-        * [如何在 ABACUS 中新增一个输入参数（v3.7.0 后）](develop-addinp2.md)
         * [如何在 ABACUS 中新增一个输入参数（截至 v3.5.3）](develop-addinp.md)
+        * [如何在 ABACUS 中新增一个输入参数（v3.7.0 后）](develop-addinp2.md)
+        * [如何在 ABACUS 中进行异构计算](develop-hetero.md)
         * [ABACUS formatter-2.0 版本使用说明书](develop-formatter2.md)
         * [ABACUS 中使用格式化工具 clang-format](develop-format.md)
     * 性能工具
@@ -71,15 +76,19 @@
     * 编程进阶
         * [ABACUS 中的测试（一）：测试的重要性](develop-test1.md)
         * [ABACUS 中的测试（二）：测试工具 gtest](develop-test2.md)
-        * [C++ 程序设计的一些想法](develop-design.md)
-        * [文件输出功能的实现代码结构设计建议：以 ABCUS CifParser 为例](develop-cifparser.md)
-        * [以格点积分程序为例：一些代码开发习惯小贴士](develop-grid.md)
+        * [ABACUS 中的测试（三）：测试方法](develop-test3.md)
+        * [Tensor 类文档 1：构造和使用说明](develop-tensor1.md)
+        * [Tensor 类文档 2：使用和拓展](develop-tensor2.md)
         * [在 ABACUS 中进行差分测试](algorithm-delta.md)
         * [ABACUS 如何处理内存 bug？](develop-memory.md)
+        * [文件输出功能的实现代码结构设计建议：以 ABCUS CifParser 为例](develop-cifparser.md)
+        * [C++ 程序设计的一些想法](develop-design.md)
+        * [以格点积分程序为例：一些代码开发习惯小贴士](develop-grid.md)
     * 模块介绍
         * [ESolver 模块介绍](develop-ESolver.md)
         * [HSolver 模块介绍](develop-HSolver.md)
         * [HContainer 模块介绍](develop-HContainer.md)
+        * [Psi 模块介绍](develop-psi.md)
     * 平面波代码介绍
         * [Introduction to ABACUS: Path to PW calculation - Part 1](develop-path1.md)
         * [Introduction to ABACUS: Path to PW calculation - Part 2](develop-path2.md)

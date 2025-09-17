@@ -46,8 +46,11 @@ ABACUS 网站访问：
 ## 2.2 建模
 
 1. 准备晶胞和原子位置等信息的文件 STRU：如何转换 STRU 的格式 <a href="https://nb.bohrium.dp.tech/detail/9814968648" target="_blank"><img src="https://cdn.dp.tech/bohrium/web/static/images/open-in-bohrium.svg" /></a>
-2. 准备赝势： [模守恒赝势生成方法简介](abacus-upf.md)
-3. 数值原子轨道基组生成教程：
+2. [ABACUS 如何选择晶胞朝向获得最佳并行效率？以碳纳米管为例](abacus-eff1.md)
+3. [ABACUS 如何选择晶胞朝向获得最佳并行效率？以二维氮化硼为例](abacus-eff2.md)
+4. [ABACUS 如何选择晶胞朝向获得最佳并行效率？以铜表面一氧化碳吸附为例](abacus-eff3.md)
+5. 准备赝势： [模守恒赝势生成方法简介](abacus-upf.md)
+6. 数值原子轨道基组生成教程：
    1. [数值原子轨道（一）：ABACUS 中的数值原子轨道命名和使用方法](abacus-nac1.md)
    2. [数值原子轨道（二）：生成给定模守恒赝势的数值原子轨道](abacus-nac2.md)
    3. [数值原子轨道（三）：产生高精度数值原子轨道](abacus-nac3.md)
@@ -62,7 +65,7 @@ ABACUS 网站访问：
 6. [ABACUS+LibRI 做杂化泛函计算教程](abacus-libri.md)
 7. [ABACUS 收敛性问题解决手册](abacus-conv.md)
 8. [ABACUS 答疑手册 v0.2 版本](abacus-question.md)
-9. ABACUS 对比 CP2K 精度和效率测试 | Si 的状态方程（EOS） <a href="https://bohrium.dp.tech/notebooks/77351186918" target="_blank"><img src="https://cdn.dp.tech/bohrium/web/static/images/open-in-bohrium.svg" /></a>
+9. [ABACUS 对比 CP2K 精度和效率测试 | Si 的状态方程（EOS）](https://www.bohrium.com/notebooks/77351186918)<a href="https://bohrium.dp.tech/notebooks/77351186918" target="_blank"><img src="https://cdn.dp.tech/bohrium/web/static/images/open-in-bohrium.svg" /></a>
 10. 有 VASP 使用背景的用户上手 ABACUS 教程：[<mark style="color:red;">ABACUS新人使用的一些注意事项</mark>](https://xmywuqhxb0.feishu.cn/docx/KN3KdqbX6o9S6xxtbtCcD5YPnue)
 
 ## 2.4 分子动力学
@@ -139,6 +142,17 @@ ABACUS 网站访问：
 12. ABACUS 计算模拟实例 | XII. Pt(111)表面羟基解离的过渡态搜索 <a href="https://bohrium.dp.tech/notebooks/36595625971" target="_blank"><img src="https://cdn.dp.tech/bohrium/web/static/images/open-in-bohrium.svg" /></a>
 13. ABACUS 计算模拟实例 | XIII. Pt 表面的 ORR 催化路径 <a href="https://bohrium.dp.tech/notebooks/49942212168" target="_blank"><img src="https://cdn.dp.tech/bohrium/web/static/images/open-in-bohrium.svg" /></a>
 
+## 3.3 公众号文章推荐
+
+1. [新服务器安装ABACUS](https://mp.weixin.qq.com/s/Cc1TWrGaiYPeZJwbo28DeA)
+2. [ABACUS中坐标变换——调整真空层方向](https://mp.weixin.qq.com/s/HaI17wtxg--AmZNWrxd-UA)
+3. [ABACUS+Wannier90+WannierTools计算Bi2Se3的能带和拓扑性质](https://mp.weixin.qq.com/s/HAByRaMFqScnTsE_6kw8tg)
+4. [更新：ABACUS+Wannier90+WannierTools计算Bi2Se3的能带和拓扑性质](https://mp.weixin.qq.com/s/nfpUpt9sClRX0_lHYwkIHw)
+
+## 3.4 视频推荐
+
+1. [ABACUS轨道生成](https://www.bilibili.com/video/BV1gBsTetEmB/)
+
 # 四、<strong>开发者文档</strong>
 
 ## 4.1 基础规范
@@ -149,9 +163,10 @@ ABACUS 网站访问：
 4. [ABACUS 线上文档输入参数撰写规范](develop-input.md)
 5. [ABACUS 代码存放规范](develop-rule.md)
 6. [如何在 ABACUS 中新增一个输入参数（v3.7.0 后）](develop-addinp2.md)
-7. [如何在 ABACUS 中新增一个输入参数（截至 v3.5.3）](develop-addinp.md)
+7. [如何在 ABACUS 中进行异构计算](develop-hetero.md)
 8. [ABACUS formatter-2.0 版本使用说明书](develop-formatter2.md)
 9. [ABACUS 中使用格式化工具 clang-format](develop-format.md)
+10. [如何在 ABACUS 中新增一个输入参数（截至 v3.5.3）](develop-addinp.md)
 
 ## 4.2 性能工具
 
@@ -167,6 +182,8 @@ ABACUS 网站访问：
 5. [以格点积分程序为例：一些代码开发习惯小贴士](develop-grid.md)
 6. [在 ABACUS 中进行差分测试](algorithm-delta.md)
 7. [ABACUS 如何处理内存 bug？](develop-memory.md)
+8. [Tensor 类文档 1：构造和使用说明](develop-tensor1.md)
+9. [Tensor 类文档 2：使用和拓展](develop-tensor2.md)
 
 ## 4.4 模块介绍
 
