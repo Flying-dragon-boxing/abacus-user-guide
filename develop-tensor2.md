@@ -278,7 +278,7 @@ ct::TensorMap(psi.get_pointer(), psi_tensor, {psi.get_nbands(), psi.get_nbasis()
 const Real eh = hsolver::dot_real_op<T, Device>()(ctx_, this->n_basis_, sphi.data<T>(), grad.data<T>());
 ```
 
-不常用，见 [Tensor 类文档 1：构造和使用说明](https://mcresearch.github.io/abacus-user-guide/develop-tensor1.html)
+不常用，见 [Tensor 类文档 1：构造和使用说明](https://abacus-user-guide.pages.dev/develop-tensor1.html)
 
 部分使用方法可见单元测试
 

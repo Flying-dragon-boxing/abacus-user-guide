@@ -263,7 +263,7 @@ void add_op::operator()(const T& alpha, const Tensor &x, const T& beta, const Te
 
 针对 add_op 的两个运算函数分别给出实现：可以看到其实现进一步依赖于外部的 kernels:add 结构体，该结构体为模板类，TEMPLATE_ALL_LAMBDA_2 宏函数是事先封装的函数，可以通过它得到此时应当调用的结构体参数。
 
-关于 kernels::add 的声明和实现可以在 container/ATen/kernels 目录下的 [linalg.h](https://github.com/deepmodeling/abacus-develop/blob/develop/source/module_base/module_container/ATen/kernels/linalg.h) 以及 [linalg.cpp](https://github.com/deepmodeling/abacus-develop/blob/develop/source/module_base/module_container/ATen/kernels/linalg.cpp) 中找到。kernels 目录结构可以参考：[ABACUS 代码存放规范 · GitBook](https://mcresearch.github.io/abacus-user-guide/develop-rule.html) 文档。
+关于 kernels::add 的声明和实现可以在 container/ATen/kernels 目录下的 [linalg.h](https://github.com/deepmodeling/abacus-develop/blob/develop/source/module_base/module_container/ATen/kernels/linalg.h) 以及 [linalg.cpp](https://github.com/deepmodeling/abacus-develop/blob/develop/source/module_base/module_container/ATen/kernels/linalg.cpp) 中找到。kernels 目录结构可以参考：[ABACUS 代码存放规范 · GitBook](https://abacus-user-guide.pages.dev/develop-rule.html) 文档。
 
 ## 3.3 算子的使用
 

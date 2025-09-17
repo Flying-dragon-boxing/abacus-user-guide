@@ -254,7 +254,7 @@ EXPECT_EQ(PARAM.inp.nelec, 10);
 
 ## 2.1 背景
 
-v3.7.0 之前添加参考[如何在 ABACUS 中新增一个输入参数（截至 v3.5.3）](https://mcresearch.github.io/abacus-user-guide/develop-addinp.html)
+v3.7.0 之前添加参考[如何在 ABACUS 中新增一个输入参数（截至 v3.5.3）](https://abacus-user-guide.pages.dev/develop-addinp.html)
 
 ### 2.1.1 原 input.cpp
 
